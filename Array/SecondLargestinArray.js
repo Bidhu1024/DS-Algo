@@ -21,3 +21,26 @@ class Solution {
     
     }
 }
+
+
+
+
+
+
+// revision 1
+
+function SecLAr(arr){
+    if(arr.length < 2) return -1;
+let max = -1;
+let secMax = -1;
+
+for(let num of arr){
+    if(max>num){
+        secMax = max;
+        max = num
+    }else if(num > secMax && num < max){
+        secMax = num
+    }
+}
+return secMax === -1 ? -1 : secMax
+}
