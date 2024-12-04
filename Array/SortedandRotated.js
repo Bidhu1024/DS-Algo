@@ -17,3 +17,30 @@ let n = nums.length;
    
     return true
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+// check if rotated
+
+let arr = [1,1,1,1];
+
+function checkSorted(array){
+for(let i= 0;i<array.length;i++){
+    if(array[i]>array[i+1]){
+        return false;
+    }
+}
+return true;
+}
+
+console.log(checkSorted(arr))
