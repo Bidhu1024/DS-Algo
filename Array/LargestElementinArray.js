@@ -82,4 +82,5 @@ return
             max = nums[i]
         }
     }
+    return max
 }
