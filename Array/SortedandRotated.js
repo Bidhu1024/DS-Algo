@@ -44,3 +44,52 @@ return true;
 }
 
 console.log(checkSorted(arr))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function sorted(nums){
+    if(nums.length === 0) return;
+
+   let counter = 0
+   for(let i = 0;i<nums.length;i++){
+    if(nums[i] > nums[(i+1) % nums.length]){
+        counter ++
+    }
+
+    if(counter > 1){
+        return false
+    }
+   }
+return true
+}
+
+let ans = sorted([6,1,2,4,5])
+console.log(ans)
