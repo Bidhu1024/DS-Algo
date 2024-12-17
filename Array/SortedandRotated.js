@@ -88,7 +88,7 @@ function sorted(nums){
         return false
     }
    }
-return true
+return true;
 }
 
 let ans = sorted([6,1,2,4,5])
